@@ -6,8 +6,7 @@ def fit():
 
     text = ''
     with open(name_file, encoding='UTF-8') as file:
-        for line in file.readlines():
-            text += str(line)
+        text = str(file.read())
     text = text.lower()
     text = text.strip()
     text = re.split("[^a-zа-яё]+", text)
