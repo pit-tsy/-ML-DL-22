@@ -2,7 +2,7 @@ import numpy as np
 import re
 
 def fit():
-    name_file = str(input('enter a name of training file: '))
+    name_file = str(input('enter a training file: '))
 
     text = ''
     with open(name_file, encoding='UTF-8') as file:
